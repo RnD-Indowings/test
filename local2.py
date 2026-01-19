@@ -28,7 +28,7 @@ while True:
         continue
 
     if msg.get_type() == "COMMAND_LONG":
-        if msg.target_component == mavutil.mavlink.MAV_COMP_ID_CAMERA:
+        if msg.target_component in (0, mavutil.mavlink.MAV_COMP_ID_CAMERA):
             print("📩 CAMERA CMD:", msg.command)
 
             mav.mav.command_ack_send(

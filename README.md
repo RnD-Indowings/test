@@ -24,3 +24,10 @@ test3 - all done with commands print and msgs particular cmd print
 
 
 test2 - only cmds print
+
+
+#### FOR FAKE.PY ####
+- use mavproxy.py only.
+- then add output.
+- Run code.
+###########
